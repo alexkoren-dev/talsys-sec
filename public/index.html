@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@themepixels" />
+  <meta name="twitter:creator" content="@themepixels" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="iAutoData" />
+  <meta name="twitter:description" content="iAuto Data" />
+  <meta name="twitter:image" content="http://themepixels.me/slim/img/slim-social.png" />
+
+  <!-- Facebook -->
+  <meta property="og:url" content="http://themepixels.me/slim" />
+  <meta property="og:title" content="iAutoData" />
+  <meta property="og:description" content="iAuto" />
+
+  <meta property="og:image" content="http://themepixels.me/slim/img/slim-social.png" />
+  <meta property="og:image:secure_url" content="http://themepixels.me/slim/img/slim-social.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="600" />
+
+  <!-- Meta -->
+  <meta name="description" content="iAuto" />
+  <meta name="author" content="ThemePixels" />
+
+  <title>TalSys</title>
+
+  <!-- vendor css -->
+  <link href="/assets/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="/assets/lib/Ionicons/css/ionicons.css" rel="stylesheet" />
+  <!-- Slim CSS -->
+  <link rel="stylesheet" href="/assets/css/slim.css" />
+
+
+  <style>
+    td.details-control {
+      background: url('../resources/details_open.png') no-repeat center center;
+      cursor: pointer;
+    }
+
+    tr.shown td.details-control {
+      background: url('../resources/details_close.png') no-repeat center center;
+    }
+
+    input[type='date'] {
+      height: 40px;
+    }
+
+    input[type='date']:before {
+      content: attr(data-date);
+    }
+
+    input::-webkit-datetime-edit, input[type='date']::-webkit-inner-spin-button, input[type='date']::-webkit-clear-button {
+        display: none;
+    }
+
+    input::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        color: black;
+        opacity: 1;
+    }
+
+    .download a {
+        margin-left: 10px;
+        padding: 10px;
+        background: #1b84e7;
+        color: white;
+    }
+    .wizard > .content > .body input.has-error {
+      border: 1px solid red;
+    }
+
+    select.form-control:not([size]):not([multiple]).has-error {
+      border: 1px solid red;
+    }
+
+    .react-datepicker__input-container, .react-datepicker__input-container input {
+      height: 42px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <script src="/assets/lib/jquery/js/jquery.js"></script>
+  <script src="/assets/lib/popper.js/js/popper.js"></script>
+  <script src="/assets/lib/bootstrap/js/bootstrap.js"></script>
+  
+  <script>
+      $(document).ready(()=>{
+          // $("#birthDate").val(moment().format('YYYY/MM/DD'))
+      })
+  </script>
+</body>
+
+</html>

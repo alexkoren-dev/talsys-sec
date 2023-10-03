@@ -1,0 +1,22 @@
+body {
+    background-color: white !important;
+}
+
+.login-screen {
+    background-color: white !important;
+}   
+
+.login-left img {
+    width: 90%;
+}
+
+.login-box {
+    background-color: white;
+    align-items: center;
+    flex: 1;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
